@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+    </WebView>
+    <LinearLayout
+        android:id="@+id/sentdiv"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/startRecognizer"
+            android:layout_height="fill_parent"
+            android:layout_width="40dp"
+            android:textSize="13dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/voicesearch"
+            />
+        <EditText
+            android:id="@+id/text"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/shape"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/send"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:textSize="13dp"
+            android:background="@drawable/buttonstyle"
+
+            android:text="发送"/>
+    </LinearLayout>
+
+</LinearLayout>
